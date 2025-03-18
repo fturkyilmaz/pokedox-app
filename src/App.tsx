@@ -7,12 +7,12 @@ const App = () => {
   return (
     <FavoritesProvider>
       <GestureHandlerRootView style={{ flex: 1 }}>
-    <NavigationContainer >
-      <Tabs />
-    </NavigationContainer>
-    </GestureHandlerRootView>
+        <NavigationContainer>
+          <Tabs />
+        </NavigationContainer>
+      </GestureHandlerRootView>
     </FavoritesProvider>
   );
-}
+};
 
 export default App;
