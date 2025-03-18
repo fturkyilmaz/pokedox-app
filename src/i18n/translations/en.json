@@ -1,0 +1,8 @@
+{
+  "favorite": {
+    "header": "Favorite Pokémon",
+    "noFavorite": "No favorite Pokémon added yet.",
+    "loading": "Loading...",
+    "error": "Error"
+  }
+}

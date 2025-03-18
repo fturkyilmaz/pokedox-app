@@ -1,0 +1,8 @@
+{
+  "favorite": {
+    "header": "Favori Pokémon'lar",
+    "noFavorite": "Henüz favori Pokémon eklenmedi.",
+    "loading": "Yükleniyor...",
+    "error": "Hata"
+  }
+}
