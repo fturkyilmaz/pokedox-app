@@ -3,7 +3,6 @@ import Tabs from "./navigation/tab";
 import { FavoritesProvider } from "./components/FavoritesProvider";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 
-
 const App = () => {
   return (
     <FavoritesProvider>
