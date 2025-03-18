@@ -11,6 +11,7 @@ import Animated, {
   useAnimatedGestureHandler,
 } from "react-native-reanimated";
 import { PanGestureHandler, GestureHandlerRootView } from "react-native-gesture-handler";
+import { useTranslation } from "react-i18next";
 
 interface FavoriteCardProps {
   pokemonName: string;
@@ -83,13 +84,17 @@ const FavoriteCard: React.FC<FavoriteCardProps> = ({ pokemonName }) => {
 };
 
 const Favorite = () => {
+
+  const { t } = useTranslation();
+
   const { favorites } = useContext(FavoritesContext);
 
   return (
     <View style={styles.container}>
-      <Text style={styles.header}>Favori Pokémon'lar</Text>
+      <Text style={styles.greeting}>{t("favorite.greeting", { name: "Furkan Türkyılmaz" })}</Text>
+      <Text style={styles.header}>{t("favorite.header")}</Text>
       {favorites.length === 0 ? (
-        <Text style={styles.noFavorites}>Henüz favori Pokémon eklenmedi.</Text>
+        <Text style={styles.noFavorites}>{t("favorite.noFavorite")}</Text>
       ) : (
         <FlatList
           data={favorites}
@@ -106,6 +111,7 @@ const Favorite = () => {
 const styles = StyleSheet.create({
   container: { flex: 1, padding: 16, backgroundColor: "#f0f0f0" },
   header: { fontSize: 24, fontWeight: "bold", marginBottom: 16, textAlign: "center" },
+  greeting: { fontSize: 16, fontWeight: "bold", marginBottom: 16, textAlign: "center" },
   noFavorites: { fontSize: 18, textAlign: "center", marginTop: 20 },
   listContent: { paddingVertical: 8 },
   swipeContainer: { position: "relative", marginBottom: 12 },

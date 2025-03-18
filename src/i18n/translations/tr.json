@@ -1,5 +1,6 @@
 {
   "favorite": {
+    "greeting":"Merhaba, {{name}} aramıza hoşgeldin...",
     "header": "Favori Pokémon'lar",
     "noFavorite": "Henüz favori Pokémon eklenmedi.",
     "loading": "Yükleniyor...",

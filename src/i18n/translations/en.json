@@ -1,5 +1,6 @@
 {
   "favorite": {
+    "greeting": "Hello, {{name}}",
     "header": "Favorite Pokémon",
     "noFavorite": "No favorite Pokémon added yet.",
     "loading": "Loading...",
